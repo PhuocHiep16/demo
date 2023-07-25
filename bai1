@@ -1,0 +1,11 @@
+let a = prompt("nhap số a");
+let b = prompt("nhập số b");
+if(a == 0 && b == 0){
+  alert("pt có vô số nghiệm");
+}else if(a == 0 && b != 0){
+  alert("pt có vô nghiệm");
+}else if(a != 0 && b == 0){
+  alert("pt có nghiệm x = 0");
+}else{
+  alert("pt có 1 nghiêm x =" + (-b/a));
+}
