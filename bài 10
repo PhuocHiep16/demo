@@ -1,0 +1,9 @@
+function isSlug(val){
+  let reg = /^[a-z0-9-_]+$/
+  return reg.test(val);
+}
+if(isSlug("hoc_tai_thi_phan123")){
+  console.log("khớp khớp");
+}else{  
+  console.log("không khớp");
+}
