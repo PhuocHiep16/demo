@@ -1,4 +1,17 @@
- function reverse(){
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <input type="text" id="daonguoc">
+    <input type="button" value="submit" onclick="reverse()">
+    <div id="result"></div>
+  </body>
+  <script>
+   function reverse(){
         let stringInput = document.getElementById("daonguoc").value;
         let newString = "";
         for(let i = stringInput.length - 1;i >= 0;i--){
@@ -6,3 +19,5 @@
         }
         document.getElementById("result").innerHTML = newString;
     }
+  </script>
+</html>
